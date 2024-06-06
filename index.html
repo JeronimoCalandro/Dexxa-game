@@ -4,23 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Dexxa Game</title>
-    <style>
-    * {margin:0; padding:0;}
-    </style>
+
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=720 height=1280 style="width: 720px; height: 1280px; background: #828080"></canvas>
-    <script src="Build/Dexxa-game.loader.js">
-
-    var canvas = document.getElementById('canvas');
-    var ratio = canvas.width / canvas.height;
-   
-    canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    canvas.width = canvas.height * ratio;
- 
-    canvas.style.position = "absolute";
-    canvas.style.left = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) / 2 - canvas.width / 2) + "px";
-    </script>
+    <script src="Build/Dexxa-game.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
