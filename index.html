@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Dexxa Game</title>
+    <title>Dexxa Game</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Dexxa-game.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Dexxa-game.data.gz",
-        frameworkUrl: buildUrl + "/Dexxa-game.framework.js.gz",
-        codeUrl: buildUrl + "/Dexxa-game.wasm.gz",
+        dataUrl: buildUrl + "/Dexxa-game.data",
+        frameworkUrl: buildUrl + "/Dexxa-game.framework.js",
+        codeUrl: buildUrl + "/Dexxa-game.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dexxa",
         productName: "Dexxa Game",
@@ -91,7 +91,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        //unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
